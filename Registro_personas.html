@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Examen Final - Vector de objetos</title>
+    <script type="text/javascript" src="class_Persona.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+
+</head>
+<body class="bg-secondary">   
+    <div class="modal-dialog  text-center "   >
+        <div class="modal-content rounded-25 shadow  border-0">
+          <div class="modal-header p-15 pb-4 border-bottom-0">           
+            <h3 class="mb-0 center">Registro de <strong>Personas</strong>  | Universitario</h3>
+          </div>       
+          <div class=" p-5 pt-0 ">
+            <form class="fil-2">
+                
+                <div class="row mb-2 ">
+
+                    <div class="fil-2">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Nombre    </span>
+                            <input type="text" name="nombre" id="nombre" class="form-control">
+                          </div>
+                    </div>
+
+                    <div class="fil-2">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Apellido    </span>
+                            <input type="text" name="apellido" id="apellido" class="form-control">
+                          </div>
+                    </div>
+
+                    <div class="fil-2">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Cedula de &nbsp<strong> Identidad</strong>    </span>
+                            <input type="text" name="ci" id="ci" class="form-control">
+                          </div>
+                    </div>
+
+                    <div class="fil-2">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Carnet &nbsp<strong> Universitario</strong>   </span>
+                            <input type="text" name="cu" id="cu" class="form-control">
+                          </div>
+                    </div>
+
+                    <div class="fil-2">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Celular   </span>
+                            <input type="text" name="celular" id="celular" class="form-control">
+                          </div>
+                    </div>
+
+                    <div class="fil-2">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">Carrera   </span>
+                            <input type="text" name="carrera" id="carrera" class="form-control">
+                          </div>
+                    </div>
+                    <div>
+                      <input class=" py-2 mb-2 btn btn-outline-danger rounded-3" type="button" value="Ordenar por Nombre" onclick="objeto.ordenarBurbuja(1)">
+                      <input class=" py-2 mb-2 btn btn-outline-danger rounded-3" type="button" value="Ordenar por Apellido" onclick="objeto.ordenarBurbuja(2)">
+                    </div> 
+                   
+              <div class="fil-4 center  mb-2">
+                <input class=" btn-info btn" type="button" value="Insertar al Principio" onclick="objeto.insertarRegistro(0)">
+                <input class=" btn-dark btn" type="button"  value="Insertar al Final" onclick="objeto.insertarRegistro(1)">
+              </div>
+              <div class="fil-4 center  mb-2">
+                <input class=" btn-info btn" type="button" value="Eliminar el Primero" onclick="objeto.Elimina(0)">
+                <input class=" btn-dark btn" type="button" value="Eliminar el Ultimo" onclick="objeto.Elimina(1)")>
+              </div>          
+              <div class="fil-4  mb-2">
+                <input class=" btn-info btn" type="button" value="Ir al Primero" onclick = "objeto.IrPrimero()">
+                <input class=" btn-dark btn" type="button" value="Ir al Ultimo" onclick = "objeto.IrUltimo()">
+              </div>
+              <div class="fil-4  mb-2">
+                <input class=" btn-secondary btn" type="button" value="Anterior" onclick = "objeto.Anterior()">
+                <input class=" btn-success btn" type="button" value="Siguiente" onclick = "objeto.Siguiente()">
+              </div>
+              <br  class="input-group mb-4">  
+              <hr class="my-1">
+              </div>                
+                <div>
+                  <input class=" py-2 mb-2 btn btn-outline-danger rounded-3" type="button" value="Eliminar Todo" onclick="objeto.Elimina()">
+                </div>              
+                <span class="center">Examen Final | Univ. Ronaldo Cahuasiri C. | USFX 2022 </span>
+                <!-- <input class=" btn btn-outline-primary rounded-3"  type="text" value="Estado" id="Texto"> -->
+              </div>
+              
+                
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        var objeto = new Universitario();
+    </script>
+    <script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>
